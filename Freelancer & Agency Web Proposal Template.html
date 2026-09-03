@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Project Proposal Template</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="proposal-container">
+        <!-- Header Section -->
+        <header class="header">
+            <div class="brand">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="brand-name">DevCraft Studio</span>
+            </div>
+            <span class="status-badge">Project Proposal</span>
+        </header>
+
+        <!-- Banner / Hero Section -->
+        <div class="hero">
+            <h1>Web Development & E-Commerce Setup</h1>
+            <p class="subtitle">Prepared for: <strong>Valued Client</strong></p>
+            <div class="meta-info">
+                <span><i class="fa-regular fa-calendar"></i> Date: September 2026</span>
+                <span><i class="fa-regular fa-clock"></i> Timeline: 2 Weeks</span>
+            </div>
+        </div>
+
+        <!-- Scope of Work Section -->
+        <section class="section">
+            <h2><i class="fa-solid fa-list-check"></i> Scope of Work</h2>
+            <div class="scope-grid">
+                <div class="scope-card">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <h3>Custom UI/UX</h3>
+                    <p>Responsive & interactive modern layout matching your brand identity.</p>
+                </div>
+                <div class="scope-card">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <h3>Product Catalog</h3>
+                    <p>Clean category structures, product listings, and filter widgets.</p>
+                </div>
+                <div class="scope-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Speed & SEO</h3>
+                    <p>Performance optimization and basic meta tag integration.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Timeline / Milestones -->
+        <section class="section">
+            <h2><i class="fa-solid fa-timeline"></i> Project Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Phase 1: Discovery & Layout Design</h4>
+                        <p>Requirements gathering, wireframing, and initial theme setup.</p>
+                        <span class="days">Days 1 - 4</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Phase 2: Development & Content Entry</h4>
+                        <p>Building responsive pages, adding product catalog & listings.</p>
+                        <span class="days">Days 5 - 10</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h4>Phase 3: Testing & Final Delivery</h4>
+                        <p>Cross-browser testing, mobile optimization, and project handoff.</p>
+                        <span class="days">Days 11 - 14</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Summary -->
+        <section class="section">
+            <h2><i class="fa-solid fa-file-invoice-dollar"></i> Investment Summary</h2>
+            <div class="pricing-table">
+                <div class="price-row header-row">
+                    <span>Deliverable</span>
+                    <span>Cost</span>
+                </div>
+                <div class="price-row">
+                    <span>Custom Web Design & Frontend Setup</span>
+                    <span>$250.00</span>
+                </div>
+                <div class="price-row">
+                    <span>E-Commerce Product Catalog Integration</span>
+                    <span>$150.00</span>
+                </div>
+                <div class="price-row total-row">
+                    <span>Total Investment</span>
+                    <span>$400.00</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acceptance / Action Box -->
+        <div class="action-box">
+            <h3>Ready to get started?</h3>
+            <p>Click below to accept this proposal and begin the project setup.</p>
+            <button id="accept-btn" class="accept-btn">
+                <i class="fa-solid fa-circle-check"></i> Accept Proposal
+            </button>
+            <div id="confirmation-msg" class="confirmation-msg hidden">
+                🎉 Thank you! Proposal accepted. We will contact you shortly.
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Interactive JavaScript -->
+    <script>
+        const acceptBtn = document.getElementById('accept-btn');
+        const confirmationMsg = document.getElementById('confirmation-msg');
+
+        acceptBtn.addEventListener('click', () => {
+            acceptBtn.style.display = 'none';
+            confirmationMsg.classList.remove('hidden');
+        });
+    </script>
+</body>
+</html>
